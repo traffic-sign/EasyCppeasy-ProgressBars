@@ -23,7 +23,7 @@ Multi line bars look like the bar below (reminder: they can be of any length and
 
 ## example code snippet that creates a progress bar that's 10 long 2 wide and has a cap of 10, and then displays it with a progress of 5  
 
-#include "ProgressBars.h"  
+    #include "ProgressBars.h"  
   
     int main()  
     {  
