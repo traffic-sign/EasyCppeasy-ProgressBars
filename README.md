@@ -25,10 +25,10 @@ Multi line bars look like the bar below (reminder: they can be of any length and
 
 #include "ProgressBars.h"  
   
-int main()  
-{  
-    ProgressBar Bar(10, 2, 10);  
+    int main()  
+    {  
+        ProgressBar Bar(10, 2, 10);  
   
-    Bar.UpdateBarProgress(5);  
-    Bar.DisplayBar();  
-}
+        Bar.UpdateBarProgress(5);  
+        Bar.DisplayBar();  
+    }
