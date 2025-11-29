@@ -38,3 +38,6 @@ creates a ProgressBar object that has a length of 15 a height of 3 and a cap of 
     
         //system("pause"); un-comment if on windows
     }
+
+
+(Just incase you couldn't tell the name is word play on the phrase "easy peasy". I was just really proud of that name, but it's a bit hard to see at first so I thought I'd put some clarification here.)
