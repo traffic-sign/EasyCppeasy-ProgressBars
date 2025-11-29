@@ -31,6 +31,26 @@ or any other style you might want!
 ## compatibility
 I believe it should work for any OS, but please do correct me if I'm wrong.
 
+## what functions/variables does it have?
+The three main funtions that come with in the progressBar class are as follows:  
+  
+[bar].DisplayBar() displays the bar. (you must have clear lines equal to your bars height-1 above your bar. Because the bar will take those spaces and clear anything that was there)  
+  
+[bar].ClearBar() clears the bar from the terminal  
+  
+[Bar].UpdateBarProgress([float]) changes the bar's progress to whatever you input in the parentheses.  
+  
+there are also 6 style variables that come with the class they are as follows  
+  
+Bar.topBottomLineOpeningChar  by default this is set to '['  
+Bar.topBottomLineClosingChar  by default this is set to ']'  
+Bar.filledInBarChar  by default this is set to '#'  
+Bar.unfilledInBarChar  by default this is set to '-'  
+Bar.middleLineClosingChar  by default this is set to '|'  
+Bar.middleLineOpeningChar  by default this is set to '|'  
+  
+all six of these can be customized however you like!  
+
 ## example code snippet
 creates a ProgressBar object that has a length of 15 a height of 3 and a cap of 10.  
 Then it sets the progress to 5 changes the filledInBarChar from '#' to '@' and then displays the bar.  
