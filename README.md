@@ -1,5 +1,5 @@
 # EasyCppeasy-ProgressBars
-Easy to use single header C++ library for displaying progress bars
+Easy to use single header C++ library for displaying progress bars in the terminal
 
 ## Why use EasyCppeasy-ProgressBars over other libraries?
 1. It's a single header library which means it is significantly easier to just drag and drop into any project.  
