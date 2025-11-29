@@ -19,13 +19,21 @@ Single line bars like the bar below (reminder: they can be any length this is ju
 Multi line bars look like the bar below (reminder: they can be of any length and height, this is just a demo):  
 [######-------]  
 |######-------|  
-[######-------]
-
+[######-------]  
+  
+You're also able to customize how your bar looks. You can customize the openings and endings. You can also change the char that represents the filled/unfilled parts of the bar  
+so for example you could customize your bar to make it look like this.  
+  
+{@@@@@@~~~~~~}  
+or  
+|$$$$$$______}  
+or any other style you might want!
 ## compatibility
 I believe it should work for any OS, but please do correct me if I'm wrong.
 
 ## example code snippet
-creates a ProgressBar object that has a length of 15 a height of 3 and a cap of 10. Then it sets the progress to 5 and displays the bar.  
+creates a ProgressBar object that has a length of 15 a height of 3 and a cap of 10.  
+Then it sets the progress to 5 changes the filledInBarChar from '#' to '@' and then displays the bar.  
     
     #include "ProgressBars.h"
     
@@ -34,6 +42,7 @@ creates a ProgressBar object that has a length of 15 a height of 3 and a cap of 
         ProgressBar Bar(15, 3, 10);
     
         Bar.UpdateBarProgress(5);
+        Bar.filledInBarChar = '@';
         Bar.DisplayBar();
     
         //system("pause"); un-comment if on windows
