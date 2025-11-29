@@ -24,7 +24,7 @@ class ProgressBar
     inline void DisplayBar();
     inline void ClearBar();
 
-    inline void UpdateBar(float progress);
+    inline void UpdateBarProgress(float progress);
 
 };
 
@@ -91,7 +91,7 @@ inline void ProgressBar::ClearBar()
     std::cout << "\r";
 }
 
-inline void ProgressBar::UpdateBar(float NewProgress)
+inline void ProgressBar::UpdateBarProgress(float NewProgress)
 {
     if (NewProgress < cap)
     {
