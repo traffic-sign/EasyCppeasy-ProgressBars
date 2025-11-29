@@ -13,6 +13,16 @@ class ProgressBar
 
 
     public:
+    
+    // style/customization
+    char topBottomLineOpeningChar = '[';
+    char topBottomLineClosingChar = ']';
+    char middleLineOpeningChar = '|';
+    char middleLineClosingChar = '|';
+
+    char filledInBarChar = '#';
+    char unfilledInBarChar = '-';
+
     //constructors
     ProgressBar() {}
     ProgressBar(float capCON) : cap(capCON) {}
@@ -38,39 +48,39 @@ inline void ProgressBar::DisplayBar()
     {
         for (int i = 0; i < height; i++)
         {
-            std::cout << "\033[A"; //ASNI code to make the terminal cursor move up one space
+            std::cout << "\033[A"; //ANSI code to make the terminal cursor move up one space
         }
         for (int i = 0; i < height; i++)
         {
             if (i == 0 || i == height-1)
             {
-                std::cout << "\r["; // \r just brings the terminal cursor back to the start of the line, and thus writes over the old bar.
+                std::cout << "\r" << topBottomLineOpeningChar; // \r just brings the terminal cursor back to the start of the line, and thus writes over the old bar.
                 float progressPerTick = cap/length;
                 int BarLength = progress/progressPerTick;
                 for (int i = 0; i < BarLength; i++)
                 {
-                    std::cout << '#';
+                    std::cout << filledInBarChar;
                 }
                 for (int i = 0; i < length-BarLength; i++)
                 {
-                    std::cout << '-';
+                    std::cout << unfilledInBarChar;
                 }
-                std::cout << "]";
+                std::cout << topBottomLineClosingChar;
             }
             else
             {                
-                std::cout << "\r|"; // \r just brings the terminal cursor back to the start of the line, and thus writes over the old bar.
+                std::cout << "\r" << middleLineOpeningChar; // \r just brings the terminal cursor back to the start of the line, and thus writes over the old bar.
                 float progressPerTick = cap/length;
                 int BarLength = progress/progressPerTick;
                 for (int i = 0; i < BarLength; i++)
                 {
-                    std::cout << '#';
+                    std::cout << filledInBarChar;
                 }
                 for (int i = 0; i < length-BarLength; i++)
                 {
-                    std::cout << '-';
+                    std::cout << unfilledInBarChar;
                 }
-                std::cout << "|";
+                std::cout << middleLineClosingChar;
             }
             std::cout << '\n';
         }
