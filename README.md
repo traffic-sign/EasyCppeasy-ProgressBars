@@ -6,7 +6,7 @@ Easy to use single header C++ library for displaying progress bars
 2. It's lightweight and easy to use.  
 3. because it's so small, it's very easy to just go in and add any extra functionality you might need!
 
-## How do I add it to a project?
+## How do I add it into a project?
 Just toss it in with the rest of your files and you're good to go! Since it's a single header library it's extremely easy and quick to drop into any project.
 
 ## What can it do?
