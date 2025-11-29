@@ -69,5 +69,5 @@ Then it sets the progress to 5 changes the filledInBarChar from '#' to '@' and t
     }
 
 
-#### the name
+### the name
 (Just incase you couldn't tell the name is word play on the phrase "easy peasy". I was just really proud of that name, but it's a bit hard to see at first so I thought I'd put some clarification here.)
