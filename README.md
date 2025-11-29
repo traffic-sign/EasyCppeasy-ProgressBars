@@ -21,14 +21,15 @@ Multi line bars look like the bar below (reminder: they can be of any length and
 |######-------|  
 [######-------]
 
-## example code snippet that creates a progress bar that's 10 long 2 wide and has a cap of 10, and then displays it with a progress of 5  
-
-    #include "ProgressBars.h"  
-  
-    int main()  
-    {  
-        ProgressBar Bar(10, 2, 10);  
-  
-        Bar.UpdateBarProgress(5);  
-        Bar.DisplayBar();  
+## example code snippet that creates a progress bar that's 15 long 3 wide and has a cap of 10, and then displays it with a progress of 5  
+    #include "ProgressBars.h"
+    
+    int main()
+    {
+        ProgressBar Bar(15, 3, 10);
+    
+        Bar.UpdateBarProgress(5);
+        Bar.DisplayBar();
+    
+        system("pause");
     }
